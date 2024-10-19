@@ -1,0 +1,26 @@
+.boxservice .col-12:first-child .items{border-top:1px dashed #624193;}
+.boxservice .items{padding:1.5em;position:relative;border:1px dashed #624193;border-top:none;display:flex;transition:all 0.5s;font-family:Quicksand-Bold;overflow:hidden;}
+.boxservice .items .img{flex:1 30%;transition:all 0.5s;position:relative;overflow:hidden;}
+.boxservice .items .img img{width:100%;height:auto;}
+.boxservice .items .img img:hover{opacity: .7;}
+.boxservice .items .details{flex:1 70%;position:relative;padding-left:2em;}
+.boxservice .items .details h3{position:relative;font-size:1.5em;line-height:1.5;padding-bottom:.5em;color:#624193;text-transform:uppercase;}
+.boxservice .items .details h3 a{color:#624193;}
+.boxservice .items .details h3 a:hover{color:black;}
+.boxservice .items .details h3:before{content:'';width:130px;height:1px;position:absolute;bottom:0;left:0;background:#624193;}
+.boxservice .items .details p{font-size:1em;margin:10px 0;color:#6D6D6D;font-weight:normal;}
+.boxservice .items .item-childs{transition:all 0.5s;position:absolute;width:100%;height:0;background:rgba(241,50,126,0.57);bottom:0;left:0;padding:1em 1.5em;opacity: 0;}
+.boxservice .items:hover .item-childs{opacity: 1;height: 100%;}
+.boxservice .items .item-childs h3 a{display:block;padding:0 0 .3em 0;border-bottom:1px solid white;color:white;}
+.boxservice .items .item-childs h3 a:hover{color:yellow;}
+.boxservice .items .item-childs ul{padding-left:1em;margin-top:1em;color:white;}
+.boxservice .items .item-childs ul li{transition:all 0.5s;}
+.boxservice .items .item-childs ul li a{display:block;padding:.3em 0;font-size:1.14em;color:white;}
+.boxservice .items .item-childs ul li a:hover{color:yellow;}
+.boxservice .items .item-childs ul li:hover{transform:translatex(5px);}
+
+@media screen and (max-width:576px){
+	.boxservice .items{flex-flow:wrap;}
+	.boxservice .items .img{flex:1 100%;}
+	.boxservice .items .details{flex:1 100%;padding-left:0;padding-top:1em;}
+}

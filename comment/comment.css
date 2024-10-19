@@ -1,0 +1,228 @@
+a {
+    color: #428bca;
+}
+a:hover{ text-decoration:none !important;} 
+p{ margin:0; padding:0;}
+.hide {
+    display: none;
+}
+.com-user {
+    width: 40px;
+    height: 40px;
+    background-image: none;
+    background-color: #ccc;
+    margin-right: 7px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 40px;
+    font-style: normal;
+	display:inline-block;
+}
+
+.xemthem_cm:hover{ color: #0332C9} 
+.xemthem_rl,.xemthem_cm{ float: left; padding: 5px 30px 5px 0px; font-size: 12px; cursor: pointer; margin-left:12px; color:#4a90e2;}
+.xemthem_rl:hover{ color: #0332C9} 
+.wrap_loginpost {
+    display: none;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    border-top: 0;
+    position: relative;
+}
+.closeIfo {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: solid 1px #cdcdcd;
+    padding: 5px 10px;
+    background-color: #e7e8e7;
+    color: #96989a;
+    cursor: pointer;
+    z-index: 999;
+}
+.iconcom-closeloi {
+    background-position: -190px -50px;
+    width: 11px !important;
+    height: 11px !important;
+}
+.wrap_loginpost .asideright .infoname {
+   
+    padding: 8px;
+    border: 1px solid #dadada;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 90.5%;
+    color: #333;
+}
+.wrap_loginpost .asideright {
+    float: right;
+    overflow: hidden;
+    width: 42%;
+}
+.wrap_loginpost .asideright .finalpost {
+    float: right;
+    padding: 8px;
+    margin-right: 14px;
+    background: #fbd648;
+    border: 1px solid #c1bfbf;
+    font-size: 14px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.wrap_loginpost .asideleft {
+    float: left;
+    overflow: hidden;
+    width: 55%;
+    border-right: 1px solid #d8d8d8;
+}
+.wrap_loginpost .asideleft label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    padding-right: 5px;
+	font-weight:normal;
+}
+.wrap_loginpost .noaccount {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999;
+}
+.wrap_loginpost .asideright label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    font-weight:normal;
+	margin-bottom: 10px;
+}
+.wrap_loginpost .asideleft a {
+    overflow: hidden;
+    margin-right: 10px;
+}
+.iconcom-facebook {
+    background-position: -70px -100px;
+    width: 110px !important;
+    height: 37px !important;
+}
+.iconcom-googleplus {
+    background-position: -70px -140px;
+    width: 110px !important;
+    height: 37px !important;
+}
+.iconcom-mobileworld {
+    background-position: -70px -180px;
+    width: 130px !important;
+    height: 37px !important;
+}
+#comment .hide {
+    display: none !important;
+}
+
+[class^="iconcom-"], [class*="iconcom-"] {
+    background-image: url(../comment/bg_comment.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+.nd_comment{
+	float:left;
+	width:100%;
+	padding:10px 0px 10px 5px;
+	margin:10px 0px 0px 0px;
+}
+.nd_comment p{
+	width:100%;
+	float:left;
+	
+}
+.rel_comment{ float:left; width:100%;background: #f1f1f1;
+    border: 1px solid #e7e7e7; 
+	position:relative; margin-top:12px;}
+.nd_comment .col-md-1 img{ width: 80%}
+.nd_comment .col-md-1{ }
+.xam{     }
+.nd_comment p.tencm{
+	
+	font-weight:bold;
+}
+
+
+.rel_comment:after{
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+	left:20px;
+}
+.rel_comment:after {
+    border-bottom-color: #f1f1f1;
+    border-width: 11px;
+    margin-left: -11px;
+}
+.com_men_xx{ display:none;}
+.nd_comment p.tencm span{ font-weight:100; color:rgba(153,153,153,1); font-style:italic; padding-left:10px;}
+.nd_comment p.ndcm{font-size: 14px;}
+.nd_comment p.thich{ color:rgba(0,102,204,1);}
+.nd_comment p.thich span{color: #999; font-size:12px;}
+.like_comment span, .like_comment_r span {
+    color: #4a90e2 !important;
+}
+
+.nd_comment p.thich img{ padding:0px 5px 0px 5px; margin-top:-5px; padding-right:0;}
+.nd_comment .chuky{
+	bottom:0px;
+	padding:10px;
+	width:777px;
+	font-style:italic;
+}
+.nd_comment .noidung_p{
+	padding:10px;
+	font-size:14px;
+	min-height:120px;
+}
+.com_men,.com_men_xx,.row-comment{
+	
+	width:100%;
+	float:left;
+}
+.row-comment textarea{ float:left; width:100%;}
+ 
+.comment .com_men label{
+	font-weight:bold;
+	padding-right:20px;
+}
+.comment textarea{
+	padding:10px;
+	float:right;
+}
+.comment .com_men input{
+	padding:2px 20px 2px 20px;
+}
+.ok{
+	float: right;
+    font-size: 15px;
+    color: #2a2a2a;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 120px;
+    padding: 11px 0 10px;
+    cursor: pointer;
+    background: #fbd648;
+	margin-top:10px;
+}
+
+.traloi,.traloi1{ color:#4a90e2;  font-size:12px;}

@@ -1,0 +1,40 @@
+# Helicon Ape version 3.1.0.115
+AddDefaultCharset UTF-8
+RewriteEngine On
+DirectoryIndex index.php
+ErrorDocument 404 http://localhost/babyblom/404.php
+# 1 year
+<FilesMatch ".(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+# 1 WEEK
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch ".(xml|txt|css|js|woff)$">
+Header set Cache-Control "max-age=604800, proxy-revalidate"
+</FilesMatch>
+# 2 DAYS
+<FilesMatch ".(html|htm|php)$">
+Header set Cache-Control "max-age=604800, private, proxy-revalidate"
+</FilesMatch>
+RewriteRule ^administrator$ administrator/ [L]
+RewriteRule ^administrator/$ administrator/ [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)x([0-9]+)/(.*)\.(jpg|jpeg|png|gif|JPG|JPEG|PNG|GIF)$  timthumb.php?src=http://localhost/babyblom/upload/$2/$6.$7&h=$4&w=$3&zc=$5&q=100
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?com=$1&id=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idl=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idc=$3&idk=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idi=$4&idk=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&ids=$5 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idl=$2&page=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idc=$3&idk=$2&page=$4 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idi=$4&page=$5 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&ids=$5&page=$6 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html$	index.php?com=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&page=([0-9]+)$	index.php?com=$1&page=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&keyword=(.*)$ index.php?com=$1&keyword=$2  [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&keyword=(.*)&p=([0-9]+)$ index.php?com=$1&keyword=$2&p=$3  [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).htm$ index.php?com=$1&lang=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?com=$1&act=$2&id=$4 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&act=$2 [L]
