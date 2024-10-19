@@ -210,11 +210,10 @@ $config['lang'] = array('vi');
 
 $config['salt1'] = '$nina@';
 $config['salt2'] = '@bbb-6-1-2019';
-
-$config['database']['servername'] = 'localhost';
-$config['database']['username'] = 'root';
-$config['database']['password'] = '';
-$config['database']['database'] = 'babyblom';
+$config['database']['servername'] = 'ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com';
+$config['database']['username'] = 'ivzvkv5adg6p8u3f';
+$config['database']['password'] = 'ovz04joz6gh18046';
+$config['database']['database'] = 'a644myw856asrhlc';
 $config['database']['refix'] = 'table_';
 
 ?>
